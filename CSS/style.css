@@ -1,0 +1,186 @@
+@font-face{
+    font-family: futura-medium;
+    src: url(../material/fuentes/futura/futura\ medium\ bt.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: futura-medium;
+}
+/* PROPIEDADES GENERALES IN */
+
+
+.negrita-promos {
+    font-weight: bolder;
+
+}
+
+.font-underline {
+    text-decoration: underline
+}
+
+main {
+    background-color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    height: 70px;
+    background-image: url(../material/imagenes/branding_black_cow/textura\ vaca.jpg);
+    background-size: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h2 {
+    margin: 0px;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+/* logo */
+.logo a img {
+    width: 100px;
+}
+/* PROPIEDADES GENERALES OUT */
+
+
+
+/* HEADER IN */
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-barra-nav {
+        display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.flex-barra-nav a{
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+}
+
+.flex-barra-emergente img{
+    width: 20px;
+}
+.flex-barra-emergente {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+
+/* HEADER OUT */
+
+
+
+/* slider in */
+
+.flex-slider {
+    overflow: clip;
+    display: flex;
+    height: 300px;
+    flex-direction: row;
+    justify-content: center;
+}
+/* slider out */
+
+/* destacados in */
+
+section div {
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flex-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+
+}
+
+/* destacados out */
+
+
+/* FOOTER in*/
+
+.flex-footer {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+/* footer elementos in */
+
+.TyC a{
+    display: ;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.flex-suscribete{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flex-suscribete a{
+    color: black;
+    text-decoration: none;
+}
+
+.flex-footer-elementos {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.flex-siguenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+
+}
+
+.flex-redes {
+    display: flex;
+    justify-content: space-around;
+    padding-inline-start: 0px;
+    margin: 0px;
+}
+
+.flex-redes img {
+    height: 40px;
+}
+ /* fotter elementos out */
+
+footer p {
+    color: white;
+    height: 40px;
+    background-color: black;
+
+}
+
+
+
+/* FOOTER out*/
