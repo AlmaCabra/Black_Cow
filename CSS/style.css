@@ -131,7 +131,7 @@ section div {
 /* footer elementos in */
 
 .TyC a{
-    display: ;
+    display: flex;
     color: black;
     text-decoration: none;
     
