@@ -1,13 +1,14 @@
-@font-face{
+@font-face {
     font-family: futura-medium;
     src: url(../material/fuentes/futura/futura\ medium\ bt.ttf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: futura-medium;
 }
+
 /* PROPIEDADES GENERALES IN */
 
 
@@ -29,25 +30,31 @@ ul {
 }
 
 h1 {
+    display: flex;
+    margin: 0;
     height: 70px;
     background-image: url(../material/imagenes/branding_black_cow/textura\ vaca.jpg);
     background-size: 100%;
     color: rgb(255, 255, 255);
-    text-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
 }
 
 h2 {
     margin: 0px;
 }
 
-.bg-white{
+.bg-white {
     background-color: white;
 }
 
 /* logo */
-.logo a img {
-    width: 100px;
+.logo img {
+    width: 70px;
 }
+
 /* PROPIEDADES GENERALES OUT */
 
 
@@ -60,21 +67,36 @@ h2 {
 }
 
 .flex-barra-nav {
-        display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
     width: 600px;
     justify-content: space-between;
 }
 
-.flex-barra-nav a{
+.flex-barra-nav {
     font-size: 25px;
     font-weight: bolder;
     color: black;
     text-decoration: none;
 }
 
-.flex-barra-emergente img{
+.flex-txt-nav {
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-nav {
+
+    align-items: center;
+}
+
+.flex-barra-emergente li img {
     width: 20px;
 }
+
 .flex-barra-emergente {
     display: flex;
     width: 150px;
@@ -85,18 +107,100 @@ h2 {
 
 
 
-/* slider in */
 
-.flex-slider {
-    overflow: clip;
-    display: flex;
-    height: 300px;
-    flex-direction: row;
-    justify-content: center;
-}
-/* slider out */
 
 /* destacados in */
+
+/* elementos destacados IN */
+
+.flex-div-destacados {
+    display: flex;
+
+
+}
+
+
+
+.flex-destacado img {}
+
+/* elementos destacados out */
+.container {
+    width: 100vw;
+    margin: 0;
+   padding: 0;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "pik-01 pik-02 pik-03 pik-04"
+        "pik-05 pik-06 pik-07 pik-08";
+}
+
+.container img{
+    background-color:rgb(255, 255, 255);
+    padding: 2px;
+}
+.pik-01 {
+    grid-area: pik-01;
+    }
+.pik-01 img{
+    max-width: 25vw;
+}
+
+
+.pik-02 {
+    grid-area: pik-02;
+}
+.pik-02 img{
+    max-width: 25vw;
+}
+
+.pik-03 {
+    grid-area: pik-03;
+}
+.pik-03 img{
+    max-width: 25vw;
+}
+
+.pik-04 {
+    grid-area: pik-04;
+}
+.pik-04 img{
+    max-width: 25vw;
+}
+
+.pik-05 {
+    grid-area: pik-05;
+}
+.pik-05 img{
+    max-width: 25vw;
+}
+
+.pik-06 {
+    grid-area: pik-06;
+}
+.pik-06 img{
+    max-width: 25vw;
+}
+
+.pik-07 {
+    grid-area: pik-07;
+}
+.pik-07 img{
+    max-width: 25vw;
+}
+
+.pik-08 {
+    grid-area: pik-08;
+}
+.pik-08 img{
+    max-width: 25vw;
+}
+
+
 
 section div {
     background-color: white;
@@ -111,7 +215,7 @@ section div {
 .flex-section {
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
 
 }
@@ -128,31 +232,32 @@ section div {
 
 }
 
+.flex-footer-elementos {
+    display: flex;
+
+    justify-content: space-between;
+}
+
 /* footer elementos in */
 
-.TyC a{
+.TyC a {
     display: flex;
     color: black;
     text-decoration: none;
-    
+
 }
 
-.flex-suscribete{
+.flex-suscribete {
     display: flex;
     flex-direction: column;
 
 }
 
-.flex-suscribete a{
+.flex-suscribete a {
     color: black;
     text-decoration: none;
 }
 
-.flex-footer-elementos {
-    display: flex;
-    height: 100px;
-    justify-content: space-between;
-}
 
 .flex-siguenos {
     display: flex;
@@ -172,7 +277,8 @@ section div {
 .flex-redes img {
     height: 40px;
 }
- /* fotter elementos out */
+
+/* footer elementos out */
 
 footer p {
     color: white;
@@ -184,3 +290,191 @@ footer p {
 
 
 /* FOOTER out*/
+
+
+
+/* RESPONSIVE */
+/* elementos destacados responsive */
+
+
+@media (max-width: 768px) {
+.container {
+    width: 100vw;
+    margin: 0;
+   padding: 0;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "pik-01 pik-02"
+        "pik-03 pik-04"
+        "pik-05 pik-06"
+        "pik-07 pik-08";
+}
+
+.container img{
+    background-color:rgb(255, 255, 255);
+    padding: 2px;
+}
+.pik-01 {
+    grid-area: pik-01;
+    }
+.pik-01 img{
+    max-width: 50vw;
+}
+
+
+.pik-02 {
+    grid-area: pik-02;
+}
+.pik-02 img{
+    max-width: 50vw;
+}
+
+.pik-03 {
+    grid-area: pik-03;
+}
+.pik-03 img{
+    max-width: 50vw;
+}
+
+.pik-04 {
+    grid-area: pik-04;
+}
+.pik-04 img{
+    max-width: 50vw;
+}
+
+.pik-05 {
+    grid-area: pik-05;
+}
+.pik-05 img{
+    max-width: 50vw;
+}
+
+.pik-06 {
+    grid-area: pik-06;
+}
+.pik-06 img{
+    max-width: 50vw;
+}
+
+.pik-07 {
+    grid-area: pik-07;
+}
+.pik-07 img{
+    max-width: 50vw;
+}
+
+.pik-08 {
+    grid-area: pik-08;
+}
+.pik-08 img{
+    max-width: 50vw;
+}
+
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 100vw;
+        margin: 0;
+       padding: 0;
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "pik-01"
+            "pik-02"
+            "pik-03"
+            "pik-04"
+            "pik-05"
+            "pik-06"
+            "pik-07"
+            "pik-08";
+    }
+    
+    .container img{
+        background-color:rgb(255, 255, 255);
+        padding: 2px;
+    }
+    .pik-01 {
+        grid-area: pik-01;
+        }
+    .pik-01 img{
+        max-width: 100vw;
+    }
+    
+    
+    .pik-02 {
+        grid-area: pik-02;
+    }
+    .pik-02 img{
+        max-width: 100vw;
+    }
+    
+    .pik-03 {
+        grid-area: pik-03;
+    }
+    .pik-03 img{
+        max-width: 100vw;
+    }
+    
+    .pik-04 {
+        grid-area: pik-04;
+    }
+    .pik-04 img{
+        max-width: 100vw;
+    }
+    
+    .pik-05 {
+        grid-area: pik-05;
+    }
+    .pik-05 img{
+        max-width: 100vw;
+    }
+    
+    .pik-06 {
+        grid-area: pik-06;
+    }
+    .pik-06 img{
+        max-width: 100vw;
+    }
+    
+    .pik-07 {
+        grid-area: pik-07;
+    }
+    .pik-07 img{
+        max-width: 100vw;
+    }
+    
+    .pik-08 {
+        grid-area: pik-08;
+    }
+    .pik-08 img{
+        max-width: 100vw;
+    }
+    
+    }
+
+/* footer responsive */
+@media (max-width: 768px) {
+    .flex-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-footer-elementos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
